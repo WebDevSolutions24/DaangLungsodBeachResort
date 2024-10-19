@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Project I</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<header>
+		<nav class="navbar">
+			<a class="logo" href="#">Daang Lungsod Beach Resort<span>.</span></a>
+			<ul class="nav-links">
+				<span id="close-menu-btn" class="material-symbols-outlined">close</span>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">ROOMS</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+				 <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+		</nav>
+	</header>
+
+	<section class="home-section" id="home-section">
+		<div class="content">
+			<h2>White Sand Beach Resort</h2>
+			<p>White sand ba hanap niyo? Wag nang magpapahuli tara na sa <strong>daang lungsod beach resort</strong> enjoy and relax</p>
+			<button>Boook Now!</button>
+		</div>
+		
+	</section>
+
+	<footer>
+		<p>Developed by: <a href="https://www.facebook.com/profile.php?id=61566144122352" target="_blank"> Web Dev Solutions</a> | All Rights Reserved.</p>
+	</footer>
+
+	 <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+</body>
+</html>
